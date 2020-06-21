@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -23,7 +24,7 @@
               <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/my_projects.html">My Projects</a>
+              <a class="nav-link" href="/ex_template.html">Template</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,28 +51,23 @@
 <div class="jumbotron text-center">
     <img src="https://aishaadamsmedia.com/wp-content/uploads/2020/05/Erica-200.jpg" alt="Erica Lewis">
     <h1>Welcome to My Spring Boot Site</h1>
-    <p>I thought it would be cool to pull my fellow Win participants into the project with me. Use the form below to enter your name, a couple sentences, and your image.</p> 
+    <p>The form below is functional.</p> 
 </div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Aisha Adams Media</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Eagle Market Street</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Indigo Innovations Group</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
+
+<div class="container fluid">
+  <div class="form-row">
+    <form action="/my_projects">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="heading">Heading/Title:</label><br>
+      <input type="text" id="heading" name="heading" value="Heading/Title"><br><br>
+      <textarea name="message" rows="10" cols="30">Enter message</textarea><br>
+      <input type="file" id="myImage" name="filename" accept="image/png, image/jpeg"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
   </div>
 </div>
+  
 
 </body>
 </html>

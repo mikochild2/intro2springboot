@@ -1,0 +1,25 @@
+h2 {
+    font-size: 32pt;
+    color: red;
+}
+
+
+/* Form Styling */
+
+form {
+    width: 70%;
+}
+
+.form-row {
+    margin: auto;
+    width: 140%;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text] {
+    padding:10px;
+    border-radius: 10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }
